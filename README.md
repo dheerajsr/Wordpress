@@ -6,6 +6,10 @@ Prerequisites:
 Docker : https://docs.docker.com/get-docker/
 Docker-Compose : https://docs.docker.com/compose/install/
 
+Wordpress Login Credential : 
+username : raodheeraj604@gmail.com
+password : CSrXDK6YmRUCOBR$6r  
+
 Usage
 1. Clone this repository to your local machine:
 git clone <https://github.com/dheerajsr/Wordpress.git>
@@ -18,8 +22,13 @@ docker-compose up -d
 The WordPress site will be accessible at http://localhost:8080
 
 Configuration Details
+Navigate to the repository directory:
+cd </wordpress_app/compose>
+
 Docker Compose Configuration (docker-compose.yml)
-yaml : version: '3.1'
+yaml :
+
+version: '3.1'
 
 services:
   wordpress:
@@ -51,7 +60,12 @@ networks:
   my-net:
 
 Dockerfile Configuration (Dockerfile)
-Dockerfile : FROM wordpress:latest
+Navigate to the repository directory:
+cd </wordpress_app/wordpress>
+
+Dockerfile : 
+
+FROM wordpress:latest
 
 ENV WORDPRESS_DB_USER=dheeraj
 ENV WORDPRESS_DB_PASSWORD=dheeraj-pass
